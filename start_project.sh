@@ -7,6 +7,10 @@ git clone https://github.com/linux-surface/linux-surface.git
 # clone the linux-surface kernel configurations repository
 git clone https://github.com/linux-surface/kernel-configs
 
-systemctl start docker
+systemctl -q is-active docker
+if [ $? -ne 0 ];
+then
+	systemctl start docker
+fi
 #initiate docker image
 cqfd init

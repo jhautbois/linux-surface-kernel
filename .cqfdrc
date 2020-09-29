@@ -1,0 +1,6 @@
+[project]
+org="iob"
+name="linux-surface-kernel"
+
+[build]
+command="cd linux && make -j `getconf _NPROCESSORS_ONLN` deb-pkg LOCALVERSION=-linux-surface"

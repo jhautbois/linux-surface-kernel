@@ -16,3 +16,9 @@ west init -m https://github.com/jhautbois/linux-surface-kernel.git
 cd linux-surface-kernel
 west update
 ```
+**If you want to use a local linux directory, create a symlink and the west update command will only get on the correct branch.**
+
+3. switch to a specific branch
+```
+west branch v5.8-surface
+```

@@ -16,8 +16,8 @@ manifest:
       revision: 85e4540966507b617c09f47eeb15d2e59ed25c99
       path: kernel-configs
     - name: linux
-      revision: fb0155a09b0224a7147cb07a4ce6034c8d29667f
-      path: linux
+      revision: v5.8
+      path: linux-kernel-surface/linux
     - name: linux-surface
       revision: b15168b83cc8b2fe084e6088aeddd45b0f66179c
       path: linux-surface
